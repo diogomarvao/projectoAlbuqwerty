@@ -33,12 +33,18 @@
  </paths>
  <validation>
   <core validator-id="jsf-verification"/>
-  <core validator-id="jboss.cdi.core"/>
+  <core validator-id="jboss.cdi.core">
+   <linked-resource declaration="true" name="%1;" path="%0"/>
+  </core>
   <core validator-id="batch-verification"/>
   <core validator-id="jboss.jsf.core"/>
   <el/>
  </validation>
- <aliases/>
+ <aliases>
+  <alias
+   path="/Event/src/main/java/com/musicstadium/view/EventBean.java" value="%0"/>
+  <alias path="eventBean" value="%1"/>
+ </aliases>
  <includes/>
  <uris>
   <uri value="http://java.sun.com/jsf/core">

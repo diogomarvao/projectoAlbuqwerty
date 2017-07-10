@@ -1,0 +1,84 @@
+package com.musicstadium.model;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="EVENTS")
+public class Event implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
+	
+//	Variaveis
+	@Column(name="Event Name")
+	private String name;
+	
+	@Column(name="Date (Start)")
+	private Date dateS;
+	
+	@Column(name="Date (End)")
+	private Date dateF;
+	
+	@Column(name="Image")
+	private String image;
+	
+	@Column(name="Description")
+	private String description;
+	
+	@Column(name="Localization")
+	private String localization;
+	
+	@Column(name="Genre")
+	private String genre;
+	
+	
+	
+	//getter & setters
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Date getDateS() {
+		return dateS;
+	}
+	public void setDateS(Date dateS) {
+		this.dateS = dateS;
+	}
+	public Date getDateF() {
+		return dateF;
+	}
+	public void setDateF(Date dateF) {
+		this.dateF = dateF;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	public String getLocal() {
+		return localization;
+	}
+	public void setLocal(String local) {
+		this.localization = local;
+	}
+	public String getGenre() {
+		return genre;
+	}
+	public void setGenre(String genre) {
+		this.genre = genre;
+	}
+	
+	
+//	Construtor Event
+	public Event(){
+		
+	}
+	
+	
+}
