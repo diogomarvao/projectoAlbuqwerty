@@ -35,6 +35,8 @@
   <core validator-id="jsf-verification"/>
   <core validator-id="jboss.cdi.core">
    <linked-resource declaration="true" name="%1;" path="%0"/>
+   <linked-resource name="%0;" path="%2"/>
+   <linked-resource declaration="true" name="%4;" path="%3"/>
   </core>
   <core validator-id="batch-verification"/>
   <core validator-id="jboss.jsf.core"/>
@@ -42,8 +44,12 @@
  </validation>
  <aliases>
   <alias
+   path="/Event/src/main/java/com/musicstadium/service/EventService.java" value="%3"/>
+  <alias
    path="/Event/src/main/java/com/musicstadium/view/EventBean.java" value="%0"/>
   <alias path="eventBean" value="%1"/>
+  <alias path="eventService" value="%4"/>
+  <alias path="/Event/src/main/java/com/musicstadium/model/Event.java" value="%2"/>
  </aliases>
  <includes/>
  <uris>
