@@ -42,11 +42,8 @@ public class Adress {
 	public void setLocal(String local) {
 		this.local = local;
 	}
-	
-//	construtor
-	public Adress(){
 		
-	}
+	
 	
 	
 }

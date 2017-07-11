@@ -853,3 +853,11 @@ Caused by: org.jboss.ide.eclipse.as.management.core.JBoss7ManangerException: Cou
 
 !ENTRY org.eclipse.jface.text 2 0 2017-07-11 09:44:52.205
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2017-07-11 09:46:16.897
+!MESSAGE Server returned lastModified <= 0 for https://raw.github.com/guari/eclipse-ui-theme/master/com.github.eclipseuitheme.themes.updatesite/content.jar
+
+!ENTRY org.eclipse.core.resources 2 2 2017-07-11 09:46:30.054
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2017-07-11 09:46:30.054
+!MESSAGE The project description file (.project) for 'RemoteSystemsTempFiles' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
