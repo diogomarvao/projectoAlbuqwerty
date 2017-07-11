@@ -1,13 +1,27 @@
 package com.musicstadium.model;
 
-public class EventSeller {
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Table;
+
+@javax.persistence.Entity
+@Table(name="EVENTSELLER")
+public class EventSeller implements Serializable {
 	
+	private static final long serialVersionUID = 1L;
+
+//	variaveis
+	@Column(name="EVENT ID")
 	private Integer eventId;
 	
+	@Column(name="SELLER")
 	private String seller;
 	
+	@Column(name="SELLERURL")
 	private String sellerUrl;
 	
+	@Column(name="PRICE")
 	private double price;
 
 //	setter & getter

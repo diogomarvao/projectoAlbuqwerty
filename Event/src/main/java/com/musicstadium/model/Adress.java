@@ -1,13 +1,27 @@
 package com.musicstadium.model;
 
-public class Adress {
+import java.io.Serializable;
 
+import javax.persistence.Column;
+import javax.persistence.Table;
+
+@javax.persistence.Entity
+@Table(name="ADRESS")
+public class Adress implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+
+//	variaveis
+	@Column(name="STREET")
 	private String street;
 	
+	@Column(name="CP4")
 	private Integer cp4;
 	
+	@Column(name="CP3")
 	private Integer cp3;
 	
+	@Column(name="LOCAL")
 	private String local;
 	
 //	setter e getter

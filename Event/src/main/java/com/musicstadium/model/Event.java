@@ -6,26 +6,28 @@ import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Table;
 
+@javax.persistence.Entity
+@Table(name="EVENT")
+public class Event extends Entity implements Serializable{
 
-public class Event extends Entity{
+	private static final long serialVersionUID = 1L;
 
-//	Variaveis
+	//	Variaveis
 	private String name;
 	
-//	@Column(name="Date (Start)")
-//	private Date dateS;
-//	
-//	@Column(name="Date (End)")
-//	private Date dateF;
-	
+	@Column(name="Date (Start)")
 	private Date dateS;
+	
+	@Column(name="Date (End)")
 	private Date dateF;
 	
-	
+	@Column(name="Description")
 	private String description;
 	
+	@Column(name="Localization")
 	private String localization;
 	
+	@Column(name="Genre")
 	private String genre;
 	
 	
