@@ -5,32 +5,24 @@ import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Table;
 
-@javax.persistence.Entity
-@Table(name="EVENTS")
-public class Event extends Entity implements Serializable{
-	
-	private static final long serialVersionUID = 1L;
-	
+
+public class Event extends Entity{
+
 //	Variaveis
-	@Column(name="Event Name")
 	private String name;
 	
-	@Column(name="Date (Start)")
-	private Date dateS;
+//	@Column(name="Date (Start)")
+//	private Date dateS;
+//	
+//	@Column(name="Date (End)")
+//	private Date dateF;
 	
-	@Column(name="Date (End)")
-	private Date dateF;
-	
-	@Column(name="Image")
 	private String image;
 	
-	@Column(name="Description")
 	private String description;
 	
-	@Column(name="Localization")
 	private String localization;
 	
-	@Column(name="Genre")
 	private String genre;
 	
 	
@@ -42,18 +34,18 @@ public class Event extends Entity implements Serializable{
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Date getDateS() {
-		return dateS;
-	}
-	public void setDateS(Date dateS) {
-		this.dateS = dateS;
-	}
-	public Date getDateF() {
-		return dateF;
-	}
-	public void setDateF(Date dateF) {
-		this.dateF = dateF;
-	}
+//	public Date getDateS() {
+//		return dateS;
+//	}
+//	public void setDateS(Date dateS) {
+//		this.dateS = dateS;
+//	}
+//	public Date getDateF() {
+//		return dateF;
+//	}
+//	public void setDateF(Date dateF) {
+//		this.dateF = dateF;
+//	}
 	public String getDescription() {
 		return description;
 	}
