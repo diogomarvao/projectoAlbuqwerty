@@ -14,9 +14,6 @@ public class EventBean implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 
-		
-	@Inject
-	private Event activeEvent;
 	
 	
 	
