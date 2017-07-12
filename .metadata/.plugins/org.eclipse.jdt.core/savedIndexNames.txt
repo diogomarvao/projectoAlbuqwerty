@@ -2,14 +2,14 @@ INDEX VERSION 1.130+C:\Users\Diogo\Documents\Workplace\projectoAlbuqwerty\.metad
 628019425.index
 3620471903.index
 1484906476.index
-2272273464.index
 2709225165.index
+2272273464.index
 848469205.index
 194259052.index
 4186149806.index
 559129880.index
-4265864773.index
 1689259093.index
+4265864773.index
 4088763158.index
 1012290214.index
 845209073.index
@@ -20,5 +20,5 @@ INDEX VERSION 1.130+C:\Users\Diogo\Documents\Workplace\projectoAlbuqwerty\.metad
 3141958188.index
 148409970.index
 3698447926.index
-4140022673.index
 1477788888.index
+4140022673.index
