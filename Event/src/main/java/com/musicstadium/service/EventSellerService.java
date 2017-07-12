@@ -34,8 +34,11 @@ public class EventSellerService extends EntityRepository<EventSeller>{
 	}
 	
 	//eliminar 
-	
-	public void removethisEventSeller(EventSeller eventSeller) {
-		removeFromDb(eventSeller);
+	@Override
+	@Transactional 
+	public void removeFromDb(EventSeller eventSeller) {
+		EventSeller activeEventSeller = getDb().find(EventSeller.class, eventSeller.getId());
+		getDb().remove(activeEventSeller);
 	}
+	
 }
