@@ -1,0 +1,5 @@
+package com.musicstadium.repository;
+
+public class EntityRepository {
+
+}
