@@ -7,7 +7,7 @@ import javax.persistence.Table;
 
 @javax.persistence.Entity
 @Table(name="EVENTSELLER")
-public class EventSeller implements Serializable {
+public class EventSeller extends Entity implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 
